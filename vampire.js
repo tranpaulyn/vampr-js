@@ -35,15 +35,7 @@ class Vampire {
 
   // Returns true if this vampire is more senior than the other vampire. (Who is closer to the original vampire)
   isMoreSeniorThan(vampire) {
-    let result = true;
-    if (this.yearConverted >= vampire.yearConverted) {
-      result = false;
-    } else if (this.creator !== vampire.creator) {
-      result = false;
-    }else {
-      result = true;
-    } 
-    return result;
+    return (this.yearConverted >= vampire.yearConverted) 
   }
 
   /** Stretch **/
